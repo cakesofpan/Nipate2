@@ -185,7 +185,7 @@
 <script src="assets/js/ui.js"></script>
 <script type="module">
   import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
-  const supabase = createClient('https://vyxaxoilyilrvrwgyfil.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ5eGF4b2lseWlscnZyd2d5ZmlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI5MTQzODksImV4cCI6MjA5ODQ5MDM4OX0.ZBfLgdjd5OvaFq7PKtN17hQWh2s37s86WIPpqB0Wz3M');
+  const supabase = createClient('https://seciubehxppyduoqkhpq.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNlY2l1YmVoeHBweWR1b3FraHBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQzNDExOTksImV4cCI6MjA5OTkxNzE5OX0.PM-DxHLNzKei3R6VPauX5npNydLuWN-tbaWSve-l9Ek');
   const { data:{session} } = await supabase.auth.getSession();
   window._session = session;
   const isAdmin = session?.user?.app_metadata?.role === 'admin';
